@@ -47,10 +47,10 @@ hr
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
+    border-top: 1px solid #ddd92a;
+    margin: 3em auto;
     padding: 0;
-    width: 100%;
+    width: 80%
 }
 
 /*
@@ -137,6 +137,7 @@ textarea
 .flex
 {
     display: flex;
+    flex-wrap: wrap;
 }
         
 .between
@@ -221,7 +222,6 @@ h6
     margin: 0 0 1em 0;
     font-family: 'Poiret One', cursive;
     text-align: center;
-    text-decoration: underline;
 }
         
 .addSpace
@@ -232,6 +232,7 @@ h6
 img
 {
     width: 100%;
+    height: 100%;
 }
 
 p
@@ -325,13 +326,18 @@ header aside
 main
 {
     background-color: rgb(29, 72, 81);
+    margin-top: 15vh;
 }
-
+.smallContainer
+    {
+        width: 90%;
+        margin: auto;
+    }
 .moi
 {
     width: 7em;
     float: left;
-    margin: 0 0.5em;
+    margin: 0;
 }
 
 .moi img
@@ -393,6 +399,7 @@ p.cv
 article.travaux
 {
     width: 90%;
+    margin: auto;
 }
 
 article.travaux h4
@@ -450,6 +457,10 @@ textarea
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     border: 1px solid #999;
+}
+.articleImage{
+    height: 30vh;
+    overflow: hidden;
 }
         
 textarea 
@@ -510,7 +521,7 @@ footer p a
     
     .smallContainer
     {
-        margin: 0 4em;
+        width: 80%;
     }
             
     li label
@@ -544,10 +555,6 @@ footer p a
         height: 10vh;
     }
     
-    #parcours
-    {
-        margin: 0 5em;
-    }
 
     #parcours ul {
         list-style-type: none;
@@ -556,28 +563,37 @@ footer p a
         width: 100%;
     }
     article.travaux {
-        width: 70%;
+        width: 40%;
+        margin: auto;
     }
     .moi {
         width: 7em;
         float: left;
-        margin: 0 3.5em;
+        margin: 0 1em 0 0;
     }
 }
 
-@media screen and (min-width: 600px)
+@media screen and (min-width: 1200px)
 {
+    .smallContainer
+    {
+        width: 80%;
+    }
     .menu_top {
         margin: 10vh 30vh 0;
     }
     .moi {
         width: 9em;
         float: left;
-        margin: 0 3.5em;
+        margin: 0 1em 0;
     }
     article.travaux {
-        width: 80%;
+        width: 30%;
     }
+    main{
+        margin-top: 10vh;
+    }
+    
 }
 /* ==========================================================================
     Helper classes
