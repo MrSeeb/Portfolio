@@ -71,7 +71,7 @@
     <!-- end header-->
 
     <!-- main-->
-    <main class="menu_top">
+    <main>
       <div class="tCenter">
         <h1>Sébastien Munoz de Léon</h1>
         <h2>Développeur web Junior</h2>
@@ -79,13 +79,13 @@
       <hr>
 
       <!-- section presentation-->
-      <section class="presentation">
+      <section class="smallContainer presentation">
           <article class="informations">
               <h3>Ma présentation</h3>
               <div class="moi">
                   <img src="img/moi.jpeg" alt="Moi">
               </div>
-              <p class="smallContainer intro">
+              <p class="intro">
                 Un bac pro Technicien Informatique en poche, une expérience dans une start-up, une folle envie d'évoluer et de partir dans un domaine en constante amélioration ... le développement !<br>
                 <span>"Une reconversion ? Non, une évolution !"</span><br>
                 Faut-il retourner sur les bancs de l'école ?<br>
@@ -98,7 +98,7 @@
       <!-- end section presentation-->
 
       <!-- section parcours-->
-      <section id="parcours">
+      <section class="smallContainer" id="parcours">
         <h3>Mon parcours</h3>
         <p class="cv"><a href="doc/CV_Munoz_Sebastien.pdf">Pour télécharger mon C.V., cliquez ici.</a></p>
         <h4>Mes expériences</h4>
@@ -137,37 +137,45 @@
       <!-- end section parcours-->
 
       <!-- section travaux-->
-      <section id="travaux">
+      <section class="smallContainer"id="travaux">
         <h3>Mes travaux</h3>
-        <article class="smallContainer travaux">
-          <h4>Twitter</h4>
-          <img src="img/Twitter.PNG" alt="Screen Twitter">
-          <p>Reproduction  de la page de connexion du site Twitter en <i class="fa fa-html5 fa-2x" aria-hidden="true"></i> et <i class="fa fa-css3 fa-2x" aria-hidden="true"></i>.</p>
-          <a href="https://github.com/MrSeeb/Twitter">Mon répertoire GitHub</a><br>
-          <a href="https://mrseeb.github.io/Twitter/">Ma GitHub page</a>
-        </article>
-        <hr class="mobileOnly">
-        <article class="smallContainer travaux">
-          <h4>Ocea</h4>
-          <img src="img/Ocea.PNG" alt="Screen Ocea">
-          <p>Reproduction de la page principale du site Ocea</p>
-          <a href="https://github.com/MrSeeb/Ocea">Mon répertoire GitHub</a><br>
-          <a href="https://mrseeb.github.io/Ocea/">Ma GitHub page</a>
-        </article>
-        <hr class="mobileOnly">
-        <article class="smallContainer travaux">
-          <h4>Boulangerie responsive</h4>
-          <img src="img/Boulangerie.PNG" alt="Screen Boulangerie">
-          <p>Reproduction d'une home page d'une boulangerie pour exercer et maitriser le responsive design.</p>
-          <a href="https://github.com/MrSeeb/Boulangerie">Mon répertoire GitHub</a><br>
-          <a href="https://mrseeb.github.io/Boulangerie/">Ma GitHub page</a>
-        </article>
+        <div class="flex between">
+          <article class="travaux">
+            <h4>Twitter</h4>
+            <div class="articleImage">
+              <img src="img/Twitter.PNG" alt="Screen Twitter">
+            </div>
+            <p>Reproduction  de la page de connexion du site Twitter en <i class="fa fa-html5 fa-2x" aria-hidden="true"></i> et <i class="fa fa-css3 fa-2x" aria-hidden="true"></i>.</p>
+            <a href="https://github.com/MrSeeb/Twitter"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://mrseeb.github.io/Twitter/"><i class="fa fa-globe" aria-hidden="true"></i></a>
+          </article>
+          <hr class="mobileOnly">
+          <article class="travaux">
+            <h4>Ocea</h4>
+            <div class="articleImage">
+              <img src="img/Ocea.PNG" alt="Screen Ocea">
+            </div>
+            <p>Reproduction de la page principale du site Ocea</p>
+            <a href="https://github.com/MrSeeb/Ocea"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://mrseeb.github.io/Ocea/"><i class="fa fa-globe" aria-hidden="true"></i></a>
+          </article>
+          <hr class="mobileOnly">
+          <article class="travaux">
+            <h4>Boulangerie responsive</h4>
+            <div class="articleImage">
+              <img src="img/Boulangerie.PNG" alt="Screen Boulangerie">
+            </div>
+            <p>Reproduction d'une home page d'une boulangerie pour exercer et maitriser le responsive design.</p>
+            <a href="https://github.com/MrSeeb/Boulangerie"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://mrseeb.github.io/Boulangerie/"><i class="fa fa-globe" aria-hidden="true"></i></a>
+          </article>
+        </div>
       </section>
       <hr>
       <!-- end section travaux-->
 
       <!-- section contact-->
-      <section id="contact">
+      <section class="smallContainer" id="contact">
         <h3>Me contacter</h3>
         <form action="index.html" method="post">
           <div>
